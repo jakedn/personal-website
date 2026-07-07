@@ -3,119 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tagged: web — Your Name</title>
+  <title>Tagged: web — Jake Ness</title>
   <meta name="description" content="All posts and notes tagged with #web">
-  <meta property="og:title" content="Tagged: web — Your Name">
+  <meta property="og:title" content="Tagged: web — Jake Ness">
   <meta property="og:description" content="All posts and notes tagged with #web">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#09090b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
   <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-350 header--transparent" aria-label="Site header" data-header>
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
-    <a href="/" class="flex flex-col gap-0.5 no-underline group" aria-label="Your Name — home">
-      <span class="font-serif text-xl font-medium text-white tracking-tight group-hover:text-gold transition-colors">Your Name</span>
-      <span class="font-sans text-[0.7rem] text-white/50 tracking-[0.06em] uppercase transition-opacity duration-350 header-tagline">Writer &amp; Thinker</span>
-    </a>
+  <div class="max-w-6xl mx-auto px-6 py-2.5 flex items-center justify-between gap-8">
+    
+    <div class="flex items-center gap-2">
+      <a
+        href="/"
+        class="p-2 text-white/70 hover:text-gold transition-colors flex items-center justify-center "
+        aria-label="Home"
+      >
+        <span class="material-symbols-outlined !text-[22px] sm:!text-[24px]" aria-hidden="true">home</span>
+      </a>
+      <a
+        href="/about/"
+        class="p-2 text-white/70 hover:text-gold transition-colors flex items-center justify-center "
+        aria-label="About"
+      >
+        <span class="material-symbols-outlined !text-[22px] sm:!text-[24px]" aria-hidden="true">person</span>
+      </a>
+    </div>
 
-    <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+    
+    <div class="flex items-center gap-1 sm:gap-2">
+      
       
         <a
-          href="/"
-          class="nav-link"
-          
-        >Home</a>
+          href="mailto:jake@crazylongname.com"
+          id="header-email-btn"
+          class="p-2 text-white/70 hover:text-gold transition-colors flex items-center justify-center"
+          aria-label="Send email to jake@crazylongname.com"
+        >
+          <span class="material-symbols-outlined !text-[22px] sm:!text-[24px]" aria-hidden="true">mail</span>
+        </a>
       
-        <a
-          href="/about/"
-          class="nav-link"
-          
-        >About</a>
-      
-        <a
-          href="/now/"
-          class="nav-link"
-          
-        >Now</a>
-      
-        <a
-          href="/posts/"
-          class="nav-link"
-          
-        >Posts</a>
-      
-        <a
-          href="/notes/"
-          class="nav-link"
-          
-        >Notes</a>
-      
-    </nav>
-
-    <button
-      id="nav-toggle"
-      class="md:hidden bg-transparent border-none text-white/80 cursor-pointer p-1 leading-none transition-colors hover:text-white"
-      aria-label="Toggle navigation"
-      aria-expanded="false"
-      aria-controls="mobile-nav"
-    >
-      <svg class="icon-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-        <line x1="2" y1="6" x2="20" y2="6"/>
-        <line x1="2" y1="11" x2="20" y2="11"/>
-        <line x1="2" y1="16" x2="20" y2="16"/>
-      </svg>
-      <svg class="icon-close hidden" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-        <line x1="4" y1="4" x2="18" y2="18"/>
-        <line x1="18" y1="4" x2="4" y2="18"/>
-      </svg>
-    </button>
-  </div>
-
-  <div id="mobile-nav" class="hidden md:hidden bg-zinc-950/95 border-t border-zinc-700 px-6 py-4 pb-6" aria-hidden="true">
-    <nav class="flex flex-col gap-3 max-w-6xl mx-auto" aria-label="Mobile navigation">
-      
-        <a
-          href="/"
-          class="font-sans text-[0.875rem] font-medium text-white/70 tracking-wider uppercase py-1.5 border-b border-zinc-700 last:border-none transition-colors hover:text-gold "
-          
-        >Home</a>
-      
-        <a
-          href="/about/"
-          class="font-sans text-[0.875rem] font-medium text-white/70 tracking-wider uppercase py-1.5 border-b border-zinc-700 last:border-none transition-colors hover:text-gold "
-          
-        >About</a>
-      
-        <a
-          href="/now/"
-          class="font-sans text-[0.875rem] font-medium text-white/70 tracking-wider uppercase py-1.5 border-b border-zinc-700 last:border-none transition-colors hover:text-gold "
-          
-        >Now</a>
-      
-        <a
-          href="/posts/"
-          class="font-sans text-[0.875rem] font-medium text-white/70 tracking-wider uppercase py-1.5 border-b border-zinc-700 last:border-none transition-colors hover:text-gold "
-          
-        >Posts</a>
-      
-        <a
-          href="/notes/"
-          class="font-sans text-[0.875rem] font-medium text-white/70 tracking-wider uppercase py-1.5 border-b border-zinc-700 last:border-none transition-colors hover:text-gold "
-          
-        >Notes</a>
-      
-    </nav>
+    </div>
   </div>
 </header>
 
+
   <main id="main-content" tabindex="-1">
     
-
 
 <div class="pt-28 pb-20 min-h-screen">
   <div class="max-w-4xl mx-auto px-6">
@@ -126,28 +67,35 @@
     </header>
 
     
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-6">
         
-          
-
-<article class="relative p-6 bg-zinc-900 border border-zinc-800 rounded-lg transition-all duration-200 hover:border-gold/50 hover:bg-zinc-800 group">
-  <a href="/notes/2026-06-13-another-note/" class="absolute inset-0 rounded-lg z-0" tabindex="-1" aria-hidden="true"></a>
-  <div class="font-sans text-[0.75rem] text-zinc-500 tracking-wider mb-2.5 flex items-center gap-1.5">
-    
-      <span class="uppercase font-medium text-zinc-400">Note</span>
-      <span class="opacity-50" aria-hidden="true">·</span>
-    
-    <time datetime="2026-06-13">June 13, 2026</time>
-  </div>
-  <h2 class="font-serif text-xl font-medium text-zinc-100 leading-[1.35] mb-2 group-hover:text-gold transition-colors relative z-10">
-    <a href="/notes/2026-06-13-another-note/" class="hover:text-gold">On Slow Websites</a>
-  </h2>
+          <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
+  <a href="/notes/2026-06-13-another-note/" class="absolute inset-0 z-10" aria-label="Read On Slow Websites"></a>
   
-    <p class="font-sans text-[0.875rem] text-zinc-400 leading-relaxed mb-3.5">Fast is a feature.</p>
   
-  <div class="relative z-10">
+
+  
+  <div class="flex flex-col flex-1">
+    <div class="font-sans text-[0.7rem] text-zinc-500 tracking-widest uppercase mb-2 flex items-center gap-2">
+      
+        <span class="font-semibold text-zinc-400">Note</span>
+        <span class="opacity-30" aria-hidden="true">/</span>
+      
+      <time datetime="2026-06-13">June 13, 2026</time>
+    </div>
+    
+    <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
+      On Slow Websites
+    </h2>
+    
+    
+      <p class="font-sans text-[0.9rem] text-zinc-400 leading-relaxed mb-4 line-clamp-2">
+        Fast is a feature.
+      </p>
     
 
+    <div class="mt-auto relative z-20">
+      
   <ul class="list-none p-0 m-0 flex flex-wrap gap-1.5 relative z-10" aria-label="Tags">
     
       <li>
@@ -165,30 +113,50 @@
   </ul>
 
 
+    </div>
   </div>
 </article>
 
         
-          
-
-<article class="relative p-6 bg-zinc-900 border border-zinc-800 rounded-lg transition-all duration-200 hover:border-gold/50 hover:bg-zinc-800 group">
-  <a href="/posts/2026-06-12-example-post/" class="absolute inset-0 rounded-lg z-0" tabindex="-1" aria-hidden="true"></a>
-  <div class="font-sans text-[0.75rem] text-zinc-500 tracking-wider mb-2.5 flex items-center gap-1.5">
-    
-      <span class="uppercase font-medium text-zinc-400">Post</span>
-      <span class="opacity-50" aria-hidden="true">·</span>
-    
-    <time datetime="2026-06-12">June 12, 2026</time>
-  </div>
-  <h2 class="font-serif text-xl font-medium text-zinc-100 leading-[1.35] mb-2 group-hover:text-gold transition-colors relative z-10">
-    <a href="/posts/2026-06-12-example-post/" class="hover:text-gold">A Longer Thought</a>
-  </h2>
+          <article class="relative flex flex-col sm:flex-row gap-6 p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
+  <a href="/posts/2026-06-12-example-post/" class="absolute inset-0 z-10" aria-label="Read A Longer Thought"></a>
   
-    <p class="font-sans text-[0.875rem] text-zinc-400 leading-relaxed mb-3.5">An example of what a developed piece of writing looks like here.</p>
   
-  <div class="relative z-10">
+    
+    <div class="w-full sm:w-48 h-48 sm:h-auto shrink-0 relative overflow-hidden rounded-lg bg-zinc-800">
+      
+        <img 
+          src="/images/hero-poster.jpg" 
+          alt="" 
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        >
+      
+    </div>
+  
+
+  
+  <div class="flex flex-col flex-1">
+    <div class="font-sans text-[0.7rem] text-zinc-500 tracking-widest uppercase mb-2 flex items-center gap-2">
+      
+        <span class="font-semibold text-zinc-400">Post</span>
+        <span class="opacity-30" aria-hidden="true">/</span>
+      
+      <time datetime="2026-06-12">June 12, 2026</time>
+    </div>
+    
+    <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
+      A Longer Thought
+    </h2>
+    
+    
+      <p class="font-sans text-[0.9rem] text-zinc-400 leading-relaxed mb-4 line-clamp-2">
+        An example of what a developed piece of writing looks like here.
+      </p>
     
 
+    <div class="mt-auto relative z-20">
+      
   <ul class="list-none p-0 m-0 flex flex-wrap gap-1.5 relative z-10" aria-label="Tags">
     
       <li>
@@ -206,30 +174,38 @@
   </ul>
 
 
+    </div>
   </div>
 </article>
 
         
-          
-
-<article class="relative p-6 bg-zinc-900 border border-zinc-800 rounded-lg transition-all duration-200 hover:border-gold/50 hover:bg-zinc-800 group">
-  <a href="/notes/2026-06-12-example-note/" class="absolute inset-0 rounded-lg z-0" tabindex="-1" aria-hidden="true"></a>
-  <div class="font-sans text-[0.75rem] text-zinc-500 tracking-wider mb-2.5 flex items-center gap-1.5">
-    
-      <span class="uppercase font-medium text-zinc-400">Note</span>
-      <span class="opacity-50" aria-hidden="true">·</span>
-    
-    <time datetime="2026-06-12">June 12, 2026</time>
-  </div>
-  <h2 class="font-serif text-xl font-medium text-zinc-100 leading-[1.35] mb-2 group-hover:text-gold transition-colors relative z-10">
-    <a href="/notes/2026-06-12-example-note/" class="hover:text-gold">Small Observation</a>
-  </h2>
+          <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
+  <a href="/notes/2026-06-12-example-note/" class="absolute inset-0 z-10" aria-label="Read Small Observation"></a>
   
-    <p class="font-sans text-[0.875rem] text-zinc-400 leading-relaxed mb-3.5">A short note or fragment.</p>
   
-  <div class="relative z-10">
+
+  
+  <div class="flex flex-col flex-1">
+    <div class="font-sans text-[0.7rem] text-zinc-500 tracking-widest uppercase mb-2 flex items-center gap-2">
+      
+        <span class="font-semibold text-zinc-400">Note</span>
+        <span class="opacity-30" aria-hidden="true">/</span>
+      
+      <time datetime="2026-06-12">June 12, 2026</time>
+    </div>
+    
+    <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
+      Small Observation
+    </h2>
+    
+    
+      <p class="font-sans text-[0.9rem] text-zinc-400 leading-relaxed mb-4 line-clamp-2">
+        A short note or fragment.
+      </p>
     
 
+    <div class="mt-auto relative z-20">
+      
   <ul class="list-none p-0 m-0 flex flex-wrap gap-1.5 relative z-10" aria-label="Tags">
     
       <li>
@@ -247,6 +223,7 @@
   </ul>
 
 
+    </div>
   </div>
 </article>
 
@@ -260,27 +237,104 @@
   <footer class="bg-zinc-900 border-t border-zinc-800 px-6 py-12 mt-auto">
   <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between items-start mb-8">
     <div class="footer-identity">
-      <a href="/" class="font-serif text-[1.1rem] font-medium text-white block mb-1.5 hover:text-gold transition-colors">Your Name</a>
-      <p class="font-sans text-[0.8rem] text-zinc-500 max-w-md leading-relaxed">A personal site for writing, notes, and ideas.</p>
+      <a href="/" class="font-serif text-[1.1rem] font-medium text-white block mb-1.5 hover:text-gold transition-colors">Jake Ness</a>
+      <p class="font-sans text-[0.8rem] text-zinc-500 max-w-md leading-relaxed mb-3">A personal site for sharing my writing, notes, and ideas.</p>
+      
+  <div class="socials-list flex items-center gap-3.5" aria-label="Social links and contact">
+    
+      <a
+        href="https://instagram.com/nessjake"
+        class="group flex items-center justify-center p-1.5"
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span 
+          class="socials-icon" 
+          style="mask: url('/images/icons/instagram.svg') no-repeat center / contain; -webkit-mask: url('/images/icons/instagram.svg') no-repeat center / contain;"
+          aria-hidden="true"
+        ></span>
+      </a>
+    
+      <a
+        href="https://www.facebook.com/jakedness"
+        class="group flex items-center justify-center p-1.5"
+        aria-label="Facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span 
+          class="socials-icon" 
+          style="mask: url('/images/icons/facebook.svg') no-repeat center / contain; -webkit-mask: url('/images/icons/facebook.svg') no-repeat center / contain;"
+          aria-hidden="true"
+        ></span>
+      </a>
+    
+      <a
+        href="https://x.com/jacobdness"
+        class="group flex items-center justify-center p-1.5"
+        aria-label="X"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span 
+          class="socials-icon" 
+          style="mask: url('/images/icons/x.svg') no-repeat center / contain; -webkit-mask: url('/images/icons/x.svg') no-repeat center / contain;"
+          aria-hidden="true"
+        ></span>
+      </a>
+    
+      <a
+        href="https://me.dm/@jakedn"
+        class="group flex items-center justify-center p-1.5"
+        aria-label="Mastodon"
+        target="_blank"
+        rel="noopener noreferrer me"
+      >
+        <span 
+          class="socials-icon" 
+          style="mask: url('/images/icons/mastodon.svg') no-repeat center / contain; -webkit-mask: url('/images/icons/mastodon.svg') no-repeat center / contain;"
+          aria-hidden="true"
+        ></span>
+      </a>
+    
+    
+      <a
+        href="mailto:jake@crazylongname.com"
+        class="group flex items-center justify-center p-1.5"
+        aria-label="Email Jake Ness"
+      >
+        <span 
+          class="socials-icon" 
+          style="mask: url('/images/icons/email.svg') no-repeat center / contain; -webkit-mask: url('/images/icons/email.svg') no-repeat center / contain;"
+          aria-hidden="true"
+        ></span>
+      </a>
+    
+  </div>
+
+
     </div>
 
-    <nav class="flex flex-col md:items-end gap-2" aria-label="Footer navigation">
+
+    <nav class="grid grid-cols-2 gap-x-5 gap-y-3" aria-label="Footer navigation">
       
-        <a href="/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors">Home</a>
+        <a href="/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Home</a>
       
-        <a href="/about/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors">About</a>
+        <a href="/about/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">About</a>
       
-        <a href="/now/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors">Now</a>
+        <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Posts</a>
       
-        <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors">Posts</a>
+        <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Notes</a>
       
-        <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors">Notes</a>
+        <a href="/socials/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Socials</a>
       
     </nav>
   </div>
 
+  
   <div class="max-w-6xl mx-auto pt-5 border-t border-zinc-800 flex flex-wrap justify-between items-center gap-4 font-sans text-[0.75rem] text-zinc-500">
-    <p>&copy; Your Name 2026</p>
+    <p>&copy; Jake 2026</p>
     <p class="footer-credit">Built with <a href="https://www.11ty.dev" class="text-zinc-400 hover:text-gold transition-colors">11ty</a></p>
   </div>
 </footer>

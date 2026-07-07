@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+        }
+
+        .message {
+            margin-bottom: 10px; /* Space between messages */
+            padding: 8px 12px;
+            border-radius: 8px;
+            line-height: 1.4;
+            color: #333;
+            word-wrap: break-word; /* Ensure long words break */
+        }
+
+        /* Styling for left-aligned messages (default) */
+        .message.left {
+            background-color: #e6f7ff; /* Light blue */
+            text-align: left;
+            margin-right: 20%; /* Keep some space on the right */
+            clear: both; /* Ensure it clears any floats */
+        }
+
+        /* Styling for right-aligned messages */
+        .message.right {
+            background-color: #d9f7be; /* Light green */
+            text-align: right;
+            margin-left: 20%; /* Keep some space on the left */
+            float: right; /* Float to the right */
+            clear: both; /* Ensure it clears any floats */
+        }
+
+        /* Small break for readability */
+        .small-break {
+            height: 10px; /* Small vertical space */
+            clear: both; /* Clear floats for proper spacing */
+        }
+
+        /* Larger break for more distinct separation */
+        .large-break {
+            height: 20px; /* Larger vertical space */
+            clear: both; /* Clear floats for proper spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message left">
+            Hey Jake!
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Oh, hi there dear reader I didn't see you there😊
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            Yea so I noticed you starting a writing everyday thread.
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Thanks for noticing!<br>
+            It humbles me when people read my posts.
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            Yeaa so between your 6th and 8th post two months went by<br>
+            Whats up with that?
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Oh well .. hmm .. I uh ..
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            You see January was an interesting month.<br>
+            I had many life changes:
+        </div>
+        <div class="small-break"></div>
+
+         <div class="message left">
+            Oh ok
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Got divorced,
+        </div>
+        <div class="small-break"></div>
+
+         <div class="message left">
+            That sucks
+        </div>
+        <div class="small-break"></div>
+
+         <div class="message right">
+            learned someone fully believes I live with no empathy
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            ok.. You really don't have to
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            sense of purpose and reality was shaken to the core of my being
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            share personal details<br>
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            I just wanted to know if you are writing everyday?
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            😅 I have taken a step back<br>
+            I have been writing to myself<br>
+            reading alot about writing
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            I hope to more regularly post<br>
+            I am figuring out an easy way to have rss
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message left">
+            rss?
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Yea, its this really awesome technology that lets you<br>
+            subscribe and read different people's posts
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            I'll let you know when I make a post about it
+        </div>
+        <div class="small-break"></div>
+
+        <div class="message right">
+            Thank you for reaching out, you made my day!
+        </div>
+        <div class="small-break"></div>
+
+    </div>
+</body>
+</html>
+
