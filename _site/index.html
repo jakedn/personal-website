@@ -109,6 +109,10 @@
           Notes
         </a>
       
+        <a href="/ai/" class="inline-block px-6 py-2.5 font-sans text-[0.75rem] font-medium tracking-[0.1em] uppercase text-white/85 border border-white/30 transition-all duration-200 hover:text-white hover:border-gold hover:bg-gold/10">
+          /AI
+        </a>
+      
         <a href="/socials/" class="inline-block px-6 py-2.5 font-sans text-[0.75rem] font-medium tracking-[0.1em] uppercase text-white/85 border border-white/30 transition-all duration-200 hover:text-white hover:border-gold hover:bg-gold/10">
           Socials
         </a>
@@ -129,9 +133,26 @@
 
 <section class="py-20 px-6" aria-label="Recent posts">
   <div class="max-w-6xl mx-auto">
-    <header class="flex items-baseline justify-between gap-4 mb-10 pb-4 border-b border-zinc-700">
-      <h2 class="font-serif text-3xl font-medium text-white tracking-tight">Recent Posts</h2>
-      <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors">All posts →</a>
+    <header class="flex items-baseline justify-between flex-wrap gap-4 mb-10 pb-4 border-b border-zinc-700">
+      <div class="flex items-center gap-4">
+        <h2 class="font-serif text-3xl font-medium text-white tracking-tight">Recent Posts</h2>
+        
+<button onclick="
+  const currentPath = window.location.pathname;
+  const urls = [
+    '/posts/2025-09-08-stages-in-life-seen-in-a-lunar-eclipse/', '/aatoe/'
+  ].filter(url => url !== currentPath);
+  if (urls.length > 0) {
+    window.location.href = urls[Math.floor(Math.random() * urls.length)];
+  }
+" class="flex items-center gap-1.5 font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap cursor-pointer">
+  <span class="material-symbols-outlined text-[1rem]">shuffle</span>
+  Random post
+</button>
+
+
+      </div>
+      <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap">All posts →</a>
     </header>
     <div class="flex flex-col gap-6">
       
@@ -188,7 +209,7 @@
 
       
         <article class="relative flex flex-col sm:flex-row gap-6 p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
-  <a href="/posts/2024-10-26-a-thought-on-education/" class="absolute inset-0 z-10" aria-label="Read 🗞️ A Thought on Education"></a>
+  <a href="/aatoe/" class="absolute inset-0 z-10" aria-label="Read 🗞️ A Thought on Education"></a>
   
   
     
@@ -258,9 +279,26 @@
 
 <section class="py-20 px-6 bg-zinc-900" aria-label="Recent notes">
   <div class="max-w-6xl mx-auto">
-    <header class="flex items-baseline justify-between gap-4 mb-10 pb-4 border-b border-zinc-700">
-      <h2 class="font-serif text-3xl font-medium text-white tracking-tight">Recent Notes</h2>
-      <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors">All notes →</a>
+    <header class="flex items-baseline justify-between flex-wrap gap-4 mb-10 pb-4 border-b border-zinc-700">
+      <div class="flex items-center gap-4">
+        <h2 class="font-serif text-3xl font-medium text-white tracking-tight">Recent Notes</h2>
+        
+<button onclick="
+  const currentPath = window.location.pathname;
+  const urls = [
+    '/notes/2025-11-29-writing-everyday-17/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-02-writing-everyday-2/', '/we1/'
+  ].filter(url => url !== currentPath);
+  if (urls.length > 0) {
+    window.location.href = urls[Math.floor(Math.random() * urls.length)];
+  }
+" class="flex items-center gap-1.5 font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap cursor-pointer">
+  <span class="material-symbols-outlined text-[1rem]">shuffle</span>
+  Random note
+</button>
+
+
+      </div>
+      <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap">All notes →</a>
     </header>
     <div class="flex flex-col gap-6">
       
@@ -516,6 +554,8 @@
         <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Posts</a>
       
         <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Notes</a>
+      
+        <a href="/ai/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">/AI</a>
       
         <a href="/socials/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Socials</a>
       

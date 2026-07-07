@@ -59,8 +59,25 @@
     <div class="pt-28 pb-20 min-h-screen">
   <div class="max-w-4xl mx-auto px-6">
     <header class="mb-12 pb-6 border-b border-zinc-800">
-      <h1 class="font-serif text-[clamp(2rem,5vw,3rem)] font-medium text-white tracking-tight mb-2">Notes</h1>
-      <p class="font-sans text-[0.9rem] text-zinc-400">Shorter updates, fragments, and observations.</p>
+      <div class="flex justify-between items-end flex-wrap gap-4 mb-2">
+        <h1 class="font-serif text-[clamp(2rem,5vw,3rem)] font-medium text-white tracking-tight leading-none">Notes</h1>
+        
+<button onclick="
+  const currentPath = window.location.pathname;
+  const urls = [
+    '/notes/2025-11-29-writing-everyday-17/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-02-writing-everyday-2/', '/we1/'
+  ].filter(url => url !== currentPath);
+  if (urls.length > 0) {
+    window.location.href = urls[Math.floor(Math.random() * urls.length)];
+  }
+" class="flex items-center gap-1.5 font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap cursor-pointer">
+  <span class="material-symbols-outlined text-[1rem]">shuffle</span>
+  Random note
+</button>
+
+
+      </div>
+      <p class="font-sans text-[0.9rem] text-zinc-400 mt-2">Shorter updates, fragments, and observations.</p>
     </header>
 
     
@@ -517,7 +534,7 @@
 
         
           <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
-  <a href="/notes/2025-01-02-we2/" class="absolute inset-0 z-10" aria-label="Read we2"></a>
+  <a href="/notes/2025-01-02-writing-everyday-2/" class="absolute inset-0 z-10" aria-label="Read Writing Everyday #2"></a>
   
   
 
@@ -529,7 +546,7 @@
     </div>
     
     <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
-      we2
+      Writing Everyday #2
     </h2>
     
     
@@ -543,7 +560,7 @@
 
         
           <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
-  <a href="/notes/2025-01-01-writing-everyday-1/" class="absolute inset-0 z-10" aria-label="Read Writing Everyday #1"></a>
+  <a href="/we1/" class="absolute inset-0 z-10" aria-label="Read Writing Everyday #1"></a>
   
   
 
@@ -666,6 +683,8 @@
         <a href="/posts/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Posts</a>
       
         <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Notes</a>
+      
+        <a href="/ai/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">/AI</a>
       
         <a href="/socials/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider uppercase hover:text-gold transition-colors md:text-right">Socials</a>
       
