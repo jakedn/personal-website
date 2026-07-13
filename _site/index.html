@@ -60,10 +60,18 @@
   
   <div class="hero-video-wrap" aria-hidden="true">
     
-      <picture>
-        <source media="(max-width: 767px)" srcset="/images/hero-image-mobile.jpg">
-        <img src="/images/hero-image.jpg" class="hero-video" alt="" eleventy:ignore="">
-      </picture>
+      <video id="hero-video-player" autoplay="" muted="" loop="" playsinline="" poster="/images/hero-poster.jpg" class="hero-video">
+        <source media="(max-width: 767px)" src="/videos/hero-video-mobile.mp4" type="video/mp4">
+        <source src="/videos/hero-video.mp4" type="video/mp4">
+      </video>
+      <script>
+        (function() {
+          var video = document.getElementById('hero-video-player');
+          if (video && window.innerWidth <= 767) {
+            video.setAttribute('poster', '/images/hero-poster-mobile.jpg');
+          }
+        })();
+      </script>
     
     <div class="hero-overlay"></div>
   </div>
