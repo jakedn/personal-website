@@ -35,6 +35,23 @@
       >
         <span class="material-symbols-outlined !text-[22px] sm:!text-[24px]" aria-hidden="true">person</span>
       </a>
+      <button
+        type="button"
+        class="p-2 text-white/70 hover:text-gold transition-colors flex items-center justify-center cursor-pointer"
+        aria-label="Random note or post"
+        onclick="
+          const normalize = p => p.replace(/\/$/, '');
+          const currentPath = normalize(window.location.pathname);
+          const urls = [
+            '/aatoe/', '/posts/2025-09-08-stages-in-life-seen-in-a-lunar-eclipse/', '/we1/', '/notes/2025-01-02-writing-everyday-2/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-29-writing-everyday-17/', '/now/', '/ai/'
+          ].filter(url => url && normalize(url) !== currentPath);
+          if (urls.length > 0) {
+            window.location.href = urls[Math.floor(Math.random() * urls.length)];
+          }
+        "
+      >
+        <span class="material-symbols-outlined !text-[22px] sm:!text-[24px]" aria-hidden="true">shuffle</span>
+      </button>
     </div>
 
     
@@ -93,7 +110,7 @@ I might put a whole post into an LLM for feedback, grammar and spelling correcti
   <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between items-start mb-8">
     <div class="footer-identity">
       <a href="/" class="font-serif text-[1.1rem] font-medium text-white block mb-1.5 hover:text-gold transition-colors">Jake Ness</a>
-      <p class="font-sans text-[0.8rem] text-zinc-500 max-w-md leading-relaxed mb-3">A personal site for sharing my writing, notes, and ideas.</p>
+      <p class="font-sans text-[0.8rem] text-zinc-500 max-w-md leading-relaxed mb-3">I am on a journey to learn about life. One day, I hope to gain understanding, to know for certain that I know nothing about life.</p>
       
   <div class="socials-list flex items-center gap-3.5" aria-label="Social links and contact">
     
