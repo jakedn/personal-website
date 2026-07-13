@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
   <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
@@ -61,18 +60,10 @@
   
   <div class="hero-video-wrap" aria-hidden="true">
     
-      <video id="hero-video-player" autoplay="" muted="" loop="" playsinline="" poster="/images/hero-poster.jpg" class="hero-video">
-        <source media="(max-width: 767px)" src="/videos/hero-video-mobile.mp4" type="video/mp4">
-        <source src="/videos/hero-video.mp4" type="video/mp4">
-      </video>
-      <script>
-        (function() {
-          var video = document.getElementById('hero-video-player');
-          if (video && window.innerWidth <= 767) {
-            video.setAttribute('poster', '/images/hero-poster-mobile.jpg');
-          }
-        })();
-      </script>
+      <picture>
+        <source media="(max-width: 767px)" srcset="/images/hero-image-mobile.jpg">
+        <img src="/images/hero-image.jpg" class="hero-video" alt="" eleventy:ignore="">
+      </picture>
     
     <div class="hero-overlay"></div>
   </div>
