@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/site.css">
 </head>
-<body>
+<body ontouchstart="">
   <a href="#main-content" class="skip-link">Skip to content</a>
   <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-350 header--transparent" aria-label="Site header" data-header="">
   <div class="max-w-6xl mx-auto px-6 py-2.5 flex items-center justify-between gap-8">
@@ -30,7 +30,7 @@
           const normalize = p => p.replace(/\/$/, '');
           const currentPath = normalize(window.location.pathname);
           const urls = [
-            '/sft1/', '/aatoe/', '/posts/2025-09-08-stages-in-life-seen-in-a-lunar-eclipse/', '/we1/', '/notes/2025-01-02-writing-everyday-2/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-29-writing-everyday-17/', '/now/', '/ai/'
+            '/sft1/', '/aatoe/', '/posts/2025-09-08-stages-in-life-seen-in-a-lunar-eclipse/', '/notes/2024-12-10-321-misophonia/', '/we1/', '/notes/2025-01-02-writing-everyday-2/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-29-writing-everyday-17/', '/notes/2026-07-19-earplugs-i-use/', '/now/', '/ai/'
           ].filter(url => url && normalize(url) !== currentPath);
           if (urls.length > 0) {
             window.location.href = urls[Math.floor(Math.random() * urls.length)];
@@ -326,7 +326,7 @@
 <button onclick="
   const currentPath = window.location.pathname;
   const urls = [
-    '/notes/2025-11-29-writing-everyday-17/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-02-writing-everyday-2/', '/we1/'
+    '/notes/2026-07-19-earplugs-i-use/', '/notes/2025-11-29-writing-everyday-17/', '/notes/2025-11-24-overpaying-for-cake/', '/notes/2025-11-13-writing-everyday-16/', '/notes/2025-08-20-writing-everyday-14/', '/notes/2025-08-14-writing-everyday-13/', '/notes/2025-07-29-writing-everyday-12/', '/notes/2025-07-09-writing-everyday-11/', '/notes/2025-07-02-writing-everyday-10/', '/notes/2025-06-15-writing-everyday-8/', '/notes/2025-06-14-writing-everyday-9/', '/notes/2025-06-08-writing-everyday-7/', '/notes/2025-01-09-writing-everyday-6/', '/notes/2025-01-07-writing-everyday-5/', '/notes/2025-01-06-writing-everyday-4/', '/notes/2025-01-05-writing-everyday-3/', '/notes/2025-01-03-writing-everyday-35/', '/notes/2025-01-02-writing-everyday-2/', '/we1/', '/notes/2024-12-10-321-misophonia/'
   ].filter(url => url !== currentPath);
   if (urls.length > 0) {
     window.location.href = urls[Math.floor(Math.random() * urls.length)];
@@ -341,6 +341,36 @@
       <a href="/notes/" class="font-sans text-[0.8rem] text-zinc-400 tracking-wider hover:text-gold transition-colors whitespace-nowrap">All notes →</a>
     </header>
     <div class="flex flex-col gap-6">
+      
+        <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
+  <a href="/notes/2026-07-19-earplugs-i-use/" class="absolute inset-0 z-10" aria-label="Read Earplugs I use"></a>
+  
+  
+
+  
+  <div class="flex flex-col flex-1">
+    <div class="font-sans text-[0.7rem] text-zinc-500 tracking-widest uppercase mb-2 flex items-center gap-2">
+      
+      <time datetime="2026-07-19">July 19, 2026</time>
+    </div>
+    
+    <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
+      Earplugs I use
+    </h2>
+    
+    
+      <p class="font-sans text-[0.9rem] text-zinc-400 leading-relaxed mb-4 line-clamp-2">
+        My discovery of earplugs, and the earplugs I recommend
+      </p>
+    
+
+    <div class="mt-auto relative z-20">
+      
+
+    </div>
+  </div>
+</article>
+
       
         <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
   <a href="/notes/2025-11-29-writing-everyday-17/" class="absolute inset-0 z-10" aria-label="Read Writing Everyday #17"></a>
@@ -458,32 +488,6 @@
     
     <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
       Writing Everyday #14
-    </h2>
-    
-    
-
-    <div class="mt-auto relative z-20">
-      
-
-    </div>
-  </div>
-</article>
-
-      
-        <article class="relative flex flex-col  p-4 sm:p-6 bg-zinc-900 border border-zinc-800 rounded-xl transition-all duration-300 hover:border-gold/40 hover:bg-zinc-800/50 group overflow-hidden">
-  <a href="/notes/2025-08-14-writing-everyday-13/" class="absolute inset-0 z-10" aria-label="Read Writing Everyday #13"></a>
-  
-  
-
-  
-  <div class="flex flex-col flex-1">
-    <div class="font-sans text-[0.7rem] text-zinc-500 tracking-widest uppercase mb-2 flex items-center gap-2">
-      
-      <time datetime="2025-08-14">August 14, 2025</time>
-    </div>
-    
-    <h2 class="font-serif text-xl sm:text-2xl font-medium text-zinc-100 leading-tight mb-2 group-hover:text-gold transition-colors">
-      Writing Everyday #13
     </h2>
     
     
